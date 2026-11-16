@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test'
 
-const message = '¡Hola! Quiero confirmar que asistiré al cumpleaños de Dulce María y Diogo Alejandro.\n\n¡Qué alegría poder acompañarlos en la celebración de sus 3 añitos!'
+const message = '¡Holaaa! 🎉🥳\n\n🕸️🦖 ¡Confirmo que asistiré al cumpleaños de Dulce María y Diogo Alejandro!\n\n💖💚 ¡Qué emoción acompañarlos a celebrar sus 3 añitos y compartir esta aventura tan especial!\n\n🎂 ¡Nos vemos en la fiesta!'
 const href = `https://wa.me/593991280243?text=${encodeURIComponent(message)}`
 
 for (const [width, height] of [[360, 800], [390, 844], [1440, 900]]) {

@@ -14,7 +14,7 @@ export const event = {
   mapsUrl: 'https://maps.google.com/maps?q=-2.03680157661438%2C-79.90084075927734&z=17&hl=es',
   whatsapp: {
     phone: '593991280243', // Ecuador: código de país + número, sin el cero nacional.
-    message: '¡Hola! Quiero confirmar que asistiré al cumpleaños de Dulce María y Diogo Alejandro.\n\n¡Qué alegría poder acompañarlos en la celebración de sus 3 añitos!',
+    message: '¡Holaaa! 🎉🥳\n\n🕸️🦖 ¡Confirmo que asistiré al cumpleaños de Dulce María y Diogo Alejandro!\n\n💖💚 ¡Qué emoción acompañarlos a celebrar sus 3 añitos y compartir esta aventura tan especial!\n\n🎂 ¡Nos vemos en la fiesta!',
   },
   countdown: { enabled: true, showSeconds: true },
   children: [
