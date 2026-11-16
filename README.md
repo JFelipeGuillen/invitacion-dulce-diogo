@@ -40,7 +40,7 @@ La celebración está configurada para el 21 de noviembre de 2026 a las 15:30 en
 
 El hero conserva «Dulce y Diogo». Las presentaciones muestran «Dulce María» y «Diogo Alejandro», con sus descripciones definitivas en dos párrafos. No repiten la edad ni muestran listas de preferencias o regalos. `children[].likes` y algunas claves de texto anteriores permanecen por compatibilidad de configuración, pero las presentaciones actuales no las renderizan.
 
-Google Maps abre una URL válida en otra pestaña. La confirmación abre `wa.me`; el invitado debe enviar el mensaje desde WhatsApp y la web no registra respuestas. Si falta un destino válido se muestra un estado honesto sin enlace funcional. El teléfono de WhatsApp está pendiente.
+Google Maps abre una URL válida en otra pestaña. La confirmación abre `wa.me`; el invitado debe enviar el mensaje desde WhatsApp y la web no registra respuestas. Si falta un destino válido se muestra un estado honesto sin enlace funcional. El destino y el mensaje de WhatsApp están configurados; el invitado debe enviar el mensaje preparado para confirmar.
 
 ## Imágenes y galería
 

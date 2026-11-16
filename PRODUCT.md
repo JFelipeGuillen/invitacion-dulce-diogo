@@ -8,7 +8,7 @@ Familiares y amigos consultan desde el móvil la información del tercer cumplea
 
 Vite, HTML semántico, CSS y JavaScript modular. Una página estática con seis secciones: hero, fecha/hora/lugar con calendario, cuenta regresiva, presentaciones individuales, álbum y cierre. Sin backend, base de datos, formularios, analíticas, música automática ni solicitudes de regalos.
 
-`src/config/event.js` es la fuente de datos: evento el 21 de noviembre de 2026 a las 15:30 en `America/Guayaquil`, lugar y Google Maps configurados. El teléfono de WhatsApp y la URL pública definitiva siguen pendientes. La confirmación se produce cuando el invitado envía el mensaje en WhatsApp; la web no registra respuestas.
+`src/config/event.js` es la fuente de datos: evento el 21 de noviembre de 2026 a las 15:30 en `America/Guayaquil`, lugar y Google Maps configurados. El destino y el mensaje de WhatsApp están configurados. La URL pública definitiva sigue pendiente. La confirmación se produce cuando el invitado envía el mensaje en WhatsApp; la web no registra respuestas.
 
 El calendario es de lunes a domingo y se deriva de la fecha configurada. La fecha del evento y el día actual tienen marcas distinguibles, incluso al coincidir. El contador respeta la zona horaria, evita negativos y mantiene estados honestos al faltar la hora o comenzar la celebración.
 

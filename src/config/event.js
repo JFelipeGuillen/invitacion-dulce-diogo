@@ -13,8 +13,8 @@ export const event = {
   address: 'Urbanización Villa Club, etapa Júpiter, manzana 10, villa 20',
   mapsUrl: 'https://maps.google.com/maps?q=-2.03680157661438%2C-79.90084075927734&z=17&hl=es',
   whatsapp: {
-    phone: '', // Código de país + número. Ejemplo de formato: '593…'.
-    message: '¡Hola! Quiero confirmar mi asistencia al cumpleaños de {names}.',
+    phone: '593991280243', // Ecuador: código de país + número, sin el cero nacional.
+    message: '¡Hola! Quiero confirmar que asistiré al cumpleaños de Dulce María y Diogo Alejandro.\n\n¡Qué alegría poder acompañarlos en la celebración de sus 3 añitos!',
   },
   countdown: { enabled: true, showSeconds: true },
   children: [
@@ -61,7 +61,7 @@ export const event = {
     closingTitle: '¡Te esperamos!',
     closingMessage: 'La aventura será aún más bonita contigo.',
     confirmButton: 'Confirmar asistencia',
-    whatsappPending: 'Muy pronto podrás confirmar tu asistencia por aquí.',
+    whatsappPending: 'La confirmación por WhatsApp no está disponible.',
     whatsappNote: 'Confirma enviando el mensaje desde WhatsApp.',
   },
   seo: {

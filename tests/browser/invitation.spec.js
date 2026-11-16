@@ -36,7 +36,7 @@ for (const width of [320, 390, 430, 768, 1440]) {
     await expect(page.locator('.draft-note')).toHaveCount(0)
     await expect(page.locator('.album-reserve')).toHaveCount(0)
     await expect(page.locator('.album button')).toHaveCount(4)
-    await expect(page.locator('a[href*="wa.me"]')).toHaveCount(0)
+    await expect(page.locator('a[href*="wa.me"]')).toHaveCount(1)
     await expect(page.locator('.venue h3')).toHaveText('Villa Club')
     await expect(page.getByRole('link', {name: /Cómo llegar/})).toHaveAttribute('href', 'https://maps.google.com/maps?q=-2.03680157661438%2C-79.90084075927734&z=17&hl=es')
     await expect(page.locator('.hero-child')).toHaveCount(2)
