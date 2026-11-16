@@ -1,0 +1,64 @@
+:root { --paper:#fff8ed; --pink:#ad3c68; --blue:#26778c; --green:#366748; --ink:#513b2d; --muted:#78634f; --yellow:#f4c76a; color:var(--ink); background:var(--paper); font-family:'Nunito Sans',sans-serif; color-scheme:light; }
+* {box-sizing:border-box} body {margin:0;background:var(--paper) url('/images/paper.webp') repeat} h1,p {margin:0} img {display:block;max-width:100%;height:auto} a {color:var(--green);text-underline-offset:5px} :focus-visible {outline:3px solid var(--blue);outline-offset:6px} ::selection {background:#f4c76a80} .proposal {width:min(100%,1100px);height:760px;position:relative;margin:auto;isolation:isolate} .proposal>* {position:absolute} .ornament {pointer-events:none;mix-blend-mode:multiply;z-index:-1} .character {object-fit:contain} .lettering {inset:0;font-weight:400;pointer-events:none} .lettering>span {position:absolute;display:block;line-height:.95} .name-dulce {color:var(--pink)} .name-diogo {color:var(--blue)} .opening {font-family:'Patrick Hand',cursive;line-height:1.1} .age {color:var(--green);text-wrap:balance} .date {font-family:'Patrick Hand',cursive;color:var(--muted);line-height:1.15} .date span,.date time {display:block} .date time {color:var(--green)} .preview-nav {display:flex;gap:28px;justify-content:center;flex-wrap:wrap;padding:20px 20px 30px;font-size:.8rem} .preview-nav a[aria-current] {font-weight:700;text-decoration-thickness:2px}
+/* A: el lettering construye el póster, las figuras lo enmarcan. */
+.editorial .opening {left:24%;top:40px;font-size:1.9rem;transform:rotate(-4deg)}
+.editorial .lettering {font-family:'Lilita One',cursive;text-transform:uppercase;letter-spacing:-.025em}
+.editorial .name-dulce {left:23%;top:112px;font-size:7.2rem;transform:rotate(-6deg)}
+.editorial .and {left:37%;top:210px;font:700 3.7rem 'Caveat',cursive;color:#946312;transform:rotate(-10deg)}
+.editorial .name-diogo {left:40%;top:246px;font-size:7.2rem;transform:rotate(3deg)}
+.editorial .dulce {left:4%;top:240px;width:26%;transform:rotate(-5deg)}
+.editorial .diogo {right:0;top:352px;width:23%;transform:rotate(5deg)}
+.editorial .age {left:39%;top:410px;max-width:33%;font:400 2.1rem/1.2 'Patrick Hand',cursive;transform:rotate(-4deg)}
+.editorial .leaf {right:0;top:18px;width:120px;transform:rotate(14deg);opacity:.7}
+.editorial .web {left:1%;top:660px;width:90px;transform:rotate(12deg);opacity:.65}
+.editorial .sprig {left:30%;bottom:34px;width:80px;transform:rotate(26deg)}
+.editorial .paint-mark {left:32%;top:220px;width:90px;height:7px;border-radius:60% 40%;background:var(--yellow);transform:rotate(-8deg)}
+.editorial .rays {right:13%;top:235px;width:60px;height:30px;transform:rotate(28deg)} .rays i {position:absolute;width:5px;height:19px;background:var(--yellow);border-radius:65%;left:20px}.rays i:first-child {left:3px;top:8px;transform:rotate(-35deg);height:13px}.rays i:last-child {left:37px;top:8px;transform:rotate(35deg);height:13px}
+.editorial .date {left:43%;top:610px;font-size:1.1rem;transform:rotate(2deg)} .editorial .date time {font-size:1.55rem}
+/* B: une page de cuento con un recorrido continuo entre gestos y palabras. */
+.storybook .opening {left:8%;top:50px;font-size:2.8rem;width:240px;transform:rotate(-5deg)}
+.storybook .lettering {font-family:'Caveat',cursive;font-weight:700}
+.storybook .name-dulce {left:12%;top:276px;font-size:7rem;transform:rotate(-8deg)}
+.storybook .and {left:31%;top:390px;font-size:3.8rem;color:var(--ink);transform:rotate(-15deg)}
+.storybook .name-diogo {left:38%;top:405px;font-size:7rem;transform:rotate(3deg)}
+.storybook .dulce {left:39%;top:32px;width:22%;transform:rotate(7deg)}
+.storybook .diogo {right:4%;top:315px;width:24%;transform:rotate(-4deg)}
+.storybook .age {left:40%;top:580px;width:250px;font:700 2.25rem/1.1 'Caveat',cursive;transform:rotate(-7deg)}
+.storybook .leaf {right:0;bottom:8px;width:100px;transform:rotate(12deg);opacity:.8}
+.storybook .sprig {left:7%;bottom:90px;width:120px;transform:rotate(-20deg)}
+.storybook .web {left:0;top:200px;width:95px;opacity:.65;transform:rotate(-16deg)}
+.storybook .blue-web {right:9%;top:30px;width:100px;transform:rotate(25deg);opacity:.6}
+.storybook .journey {inset:0;width:100%;height:100%;fill:none;stroke:#79ad84;stroke-width:1.5;stroke-dasharray:3 9;stroke-linecap:round;opacity:.5;z-index:-1}
+.journey g {fill:#79ad84;stroke:none}
+.storybook .date {left:12%;bottom:28px;font-size:1.1rem;transform:rotate(3deg)}.storybook .date time {font-size:1.55rem}
+@media(max-width:700px){
+ .proposal {height:770px;overflow:clip}
+ .preview-nav {gap:16px;font-size:.75rem}
+ .editorial .opening {left:25px;top:30px;font-size:1.5rem}
+ .editorial .name-dulce {left:20px;top:92px;font-size:clamp(4.6rem,23vw,6rem)}
+ .editorial .and {left:37px;top:177px;font-size:3.4rem}
+ .editorial .name-diogo {left:19%;top:215px;font-size:clamp(4.6rem,23vw,6rem)}
+ .editorial .dulce {left:4%;top:320px;width:47%;transform:rotate(-5deg)}
+ .editorial .diogo {right:3%;top:425px;width:43%;transform:rotate(4deg)}
+ .editorial .age {left:52%;top:333px;width:43%;max-width:none;font-size:1.75rem}
+ .editorial .leaf {right:-15px;top:40px;width:62px}
+ .editorial .web {left:-20px;top:641px;width:83px}
+ .editorial .sprig {left:34%;bottom:22px;width:65px}
+ .editorial .paint-mark {left:45%;top:187px;width:65px;height:5px}
+ .editorial .rays {right:5%;top:167px;transform:rotate(17deg) scale(.8)}
+ .editorial .date {left:10%;top:638px;font-size:1rem}.editorial .date time {font-size:1.3rem}
+ .storybook .opening {left:27px;top:29px;font-size:2.15rem;width:180px}
+ .storybook .dulce {left:auto;right:6%;top:78px;width:43%;transform:rotate(4deg)}
+ .storybook .name-dulce {left:20px;top:231px;font-size:5.7rem}
+ .storybook .and {left:30px;top:320px;font-size:3rem}
+ .storybook .name-diogo {left:21%;top:340px;font-size:5.9rem}
+ .storybook .diogo {left:4%;right:auto;top:453px;width:48%;transform:rotate(-5deg)}
+ .storybook .age {left:58%;top:530px;width:38%;font-size:1.9rem}
+ .storybook .web {left:-18px;top:159px;width:72px}
+ .storybook .blue-web {right:-21px;top:347px;width:70px}
+ .storybook .sprig {left:auto;right:4px;bottom:115px;width:50px}
+ .storybook .leaf {right:25px;top:15px;bottom:auto;width:48px}
+ .storybook .date {left:58%;bottom:38px;font-size:.9rem}.storybook .date time {font-size:1.2rem}
+ .storybook .journey {transform:rotate(-12deg);opacity:.35}
+}
+@media(max-width:350px){.editorial .name-diogo{left:12%}.storybook .name-diogo{font-size:5.3rem;left:17%}.storybook .name-dulce{font-size:5.3rem}.storybook .age{font-size:1.6rem}}

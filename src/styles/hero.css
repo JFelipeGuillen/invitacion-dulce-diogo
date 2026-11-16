@@ -1,0 +1,54 @@
+/* Propuesta A aprobada: lettering y acuarelas integrados, sin UI de preview. */
+.hero.section {max-width:1100px;height:740px;padding:0;position:relative;isolation:isolate;overflow:clip}
+.hero > * {position:absolute}
+.hero .opening {font-family:'Patrick Hand',cursive;line-height:1.1}
+.hero .hero-names {inset:0;margin:0;font-weight:400;pointer-events:none}
+.hero-names > span {position:absolute;display:block;line-height:.95}
+.hero .name-dulce {color:var(--rose-ink)}
+.hero .name-diogo {color:var(--blue-ink)}
+.hero .hero-child {height:auto;object-fit:contain}
+.hero .age-line {color:var(--green-ink);text-wrap:balance}
+.hero .decoration {z-index:-1}
+.hero-date {font-family:'Patrick Hand',cursive;color:var(--muted);line-height:1.15}
+.hero-date span,.hero-date time {display:block}
+.hero-date time {color:var(--green-ink)}
+.hero .opening {left:24%;top:40px;font-size:1.9rem;transform:rotate(-4deg)}
+.hero .hero-names {font-family:'Lilita One',cursive;text-transform:uppercase;letter-spacing:-.025em}
+.hero .name-dulce {left:23%;top:112px;font-size:7.2rem;transform:rotate(-6deg)}
+.hero .and {left:37%;top:210px;font:700 3.7rem 'Caveat',cursive;color:#946312;transform:rotate(-10deg)}
+.hero .name-diogo {left:40%;top:246px;font-size:7.2rem;transform:rotate(3deg)}
+.hero .hero-child.dulce {left:4%;top:240px;width:26%;transform:rotate(-5deg)}
+.hero .hero-child.diogo {right:0;top:352px;width:23%;transform:rotate(5deg)}
+.hero .age-line {left:39%;top:410px;max-width:33%;font:400 2.1rem/1.2 'Patrick Hand',cursive;transform:rotate(-4deg)}
+.hero .hero-leaf {right:0;top:18px;width:120px;transform:rotate(14deg);opacity:.7}
+.hero .hero-web {left:1%;top:600px;width:80px;transform:rotate(12deg);opacity:.65}
+.hero .hero-sprig {left:50%;bottom:34px;width:80px;transform:rotate(26deg)}
+.hero .paint-mark {left:32%;top:220px;width:90px;height:7px;border-radius:60% 40%;background:var(--yellow);transform:rotate(-8deg)}
+.hero .hero-rays {right:13%;top:235px;width:60px;height:30px;transform:rotate(28deg)} .hero-rays i {position:absolute;width:5px;height:19px;background:var(--yellow);border-radius:65%;left:20px}.hero-rays i:first-child {left:3px;top:8px;transform:rotate(-35deg);height:13px}.hero-rays i:last-child {left:37px;top:8px;transform:rotate(35deg);height:13px}
+.hero .hero-date {left:34%;top:610px;font-size:1.1rem;transform:rotate(2deg)} .hero .hero-date time {font-size:1.55rem}
+@media(max-width:700px){
+ .hero .opening {left:25px;top:30px;font-size:1.5rem}
+ .hero .name-dulce {left:20px;top:92px;font-size:clamp(4.6rem,23vw,6rem)}
+ .hero .and {left:37px;top:177px;font-size:3.4rem}
+ .hero .name-diogo {left:19%;top:215px;font-size:clamp(4.6rem,23vw,6rem)}
+ .hero .hero-child.dulce {left:4%;top:320px;width:47%;transform:rotate(-5deg)}
+ .hero .hero-child.diogo {right:3%;top:425px;width:43%;transform:rotate(4deg)}
+ .hero .age-line {left:52%;top:333px;width:43%;max-width:none;font-size:1.75rem}
+ .hero .hero-leaf {right:0;top:40px;width:62px}
+ .hero .hero-web {left:0;top:618px;width:40px}
+ .hero .hero-sprig {left:55%;bottom:22px;width:65px}
+ .hero .paint-mark {left:45%;top:187px;width:65px;height:5px}
+ .hero .hero-rays {right:5%;top:167px;transform:rotate(17deg) scale(.8)}
+ .hero .hero-date {left:12%;top:638px;font-size:1rem}.hero .hero-date time {font-size:1.3rem}
+}
+
+@media(max-width:700px){.hero.section{height:735px}.hero .hero-sprig{bottom:12px}}
+@media(max-width:350px){.hero .name-diogo{left:12%}.hero .opening{font-size:1.3rem}.hero .age-line{font-size:1.6rem}}
+@media(min-width:701px) and (max-width:1000px){.hero .name-dulce,.hero .name-diogo{font-size:clamp(4.8rem,10.5vw,7.2rem)}.hero .hero-child.diogo{right:3%}.hero .age-line{font-size:1.8rem}}
+.hero.hero--readable {height:auto;display:flex;flex-direction:column;align-items:center;gap:20px;padding:28px}
+.hero--readable > *, .hero--readable .hero-names > span {position:static!important;inset:auto!important;transform:none!important}
+.hero--readable .hero-names {display:flex;flex-wrap:wrap;justify-content:center;gap:8px;width:100%}
+.hero--readable .name-dulce,.hero--readable .name-diogo {font-size:clamp(3rem,15vw,6rem)}
+.hero--readable .hero-child {width:60%;max-width:250px}
+.hero--readable .age-line {width:auto;max-width:100%}
+.hero--readable .decoration,.hero--readable .paint-mark,.hero--readable .hero-rays {display:none}

@@ -1,0 +1,37 @@
+# Dependencias y compilación
+/node_modules/
+/dist/
+
+# Resultados y capturas de pruebas
+/test-results/
+/playwright-report/
+
+# Variables de entorno y configuración privada
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.local
+*.local.json
+
+# Logs, temporales y configuración local del editor
+*.log
+*.tmp
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+/.idea/
+/.vscode/
+
+# Herramientas y asistentes locales
+/.impeccable/
+/.agent/
+/.agents/
+/.codex/
+/.gemini/
+
+# Referencias privadas, originales y versiones históricas
+/references/
+/.local-archive/

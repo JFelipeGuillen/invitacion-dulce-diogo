@@ -1,0 +1,53 @@
+/* Dos encuentros del mismo cuento, sin marcos ni paneles. */
+.protagonists { padding-block: 40px 8px; }
+.protagonists > .section-heading { max-width: 650px; margin-inline: auto; }
+.protagonists h2 { font-size: clamp(2.4rem, 4.4vw, 3.4rem); line-height: 1.12; text-wrap: balance; }
+.protagonist { position: relative; isolation: isolate; display: grid; grid-template-columns: 1.1fr 1fr; grid-template-rows: auto auto; align-content: center; align-items: center; column-gap: 52px; row-gap: 20px; max-width: 880px; margin: 56px auto 0; }
+.protagonist h3 { grid-column: 2; align-self: end; position: relative; width: min-content; max-width: 100%; margin: 0; font: 400 clamp(3.6rem, 6vw, 4.7rem)/1.05 'Lilita One', cursive; letter-spacing: -.02em; color: var(--rose-ink); }
+.protagonist h3::after { content: ''; position: absolute; width: 60%; height: 5px; bottom: -9px; left: 3px; background: var(--yellow); border-radius: 70% 20% 65% 30%; transform: rotate(-4deg); }
+.protagonist .portrait-composition { grid-column: 1; grid-row: 1 / 3; position: relative; width: 100%; min-width: 0; display: grid; place-items: center; }
+.protagonist .child-portrait { display: block; width: 100%; max-width: 360px; height: auto; object-fit: contain; }
+.protagonist-copy { grid-column: 2; align-self: start; min-width: 0; }
+.child-description { font: 1rem/1.7 var(--body); max-width: 38ch; margin: 8px 0 0; text-wrap: pretty; }
+.protagonist .portrait-detail { z-index: -1; width: 65px; left: -20px; top: 5%; opacity: .5; }
+.protagonist-diogo { grid-template-columns: 1fr 1.1fr; margin-top: 44px; }
+.protagonist-diogo h3 { grid-column: 1; color: var(--green-ink); }
+.protagonist-diogo .portrait-composition { grid-column: 2; }
+.protagonist-diogo .child-portrait { max-width: 420px; }
+.protagonist-diogo .protagonist-copy { grid-column: 1; padding-left: 0; }
+.protagonist-diogo .portrait-detail { left: auto; right: -8px; top: auto; bottom: -10px; opacity: .7; }
+.portrait-reserve { display: grid; place-items: center; padding: 48px 24px; min-height: 240px; max-width: 240px; font: 1.5rem/1.2 var(--hand); color: var(--muted); text-align: center; }
+.has-portrait .portrait-reserve { display: none; }
+@media (max-width: 700px) {
+ .protagonists { padding-top: 30px; }
+ .protagonists > .section-heading { max-width: 390px; }
+ .protagonists h2 { font-size: 2.4rem; text-align: left; }
+ .protagonist, .protagonist-diogo { display: grid; grid-template-columns: minmax(0, 1fr); gap: 20px; margin-top: 36px; }
+ .protagonist h3, .protagonist-diogo h3 { grid-column: 1; grid-row: 1; font-size: 3.6rem; margin-left: 4px; }
+ .protagonist .portrait-composition, .protagonist-diogo .portrait-composition { grid-column: 1; grid-row: 2; width: 100%; }
+ .protagonist .child-portrait { max-width: 280px; justify-self: start; }
+ .protagonist-diogo h3 { margin-left: auto; margin-right: 8px; }
+ .protagonist-diogo .child-portrait { max-width: 330px; justify-self: end; }
+ .protagonist-copy, .protagonist-diogo .protagonist-copy { grid-column: 1; grid-row: 3; width: auto; max-width: 31ch; margin-left: 22px; padding: 0; text-align: left; }
+ .protagonist-diogo .protagonist-copy { margin-left: 4px; }
+ .child-description { margin-top: 0; }
+ .protagonist .portrait-detail { left: auto; right: 0; top: 95px; width: 45px; }
+ .protagonist-diogo .portrait-detail { top: auto; bottom: -36px; right: 0; width: 40px; }
+ .protagonist-diogo { margin-top: 48px; }
+}
+@media (min-width: 701px) and (max-width: 900px) {
+ .protagonist, .protagonist-diogo { column-gap: 28px; }
+}
+
+/* Anotación pequeña junto al descubrimiento, fuera de la figura. */
+.discovery-question { justify-self: end; margin: 4px 8px 0 0; font: 400 1.25rem/1.2 var(--hand); color: var(--rose-ink); transform: rotate(-4deg); }
+.portrait-composition:not(.has-portrait) .discovery-question { display: none; }
+
+.child-description + .child-description { margin-top: 18px; }
+
+/* La pregunta acompaña el gesto, en el espacio transparente sobre las huellas. */
+.protagonist-dulce .portrait-artwork { position: relative; width: 100%; max-width: 360px; }
+.protagonist-dulce .discovery-question { position: absolute; left: 74%; top: 63%; max-width: 26%; margin: 0; font-size: 1.1rem; line-height: 1.15; }
+@media (max-width: 700px) {
+ .protagonist-dulce .portrait-artwork { max-width: 280px; justify-self: start; }
+}
