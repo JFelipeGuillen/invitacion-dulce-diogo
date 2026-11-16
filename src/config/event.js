@@ -24,10 +24,10 @@ export const event = {
   // De 3 a 5 fotos funcionan especialmente bien. Admite cualquier cantidad.
   // { src: 'images/recuerdo-01.webp', alt: 'Descripción de la fotografía', caption: '' }
   gallery: [
-    { src: 'images/gallery/01-dulce.jpg', alt: 'Dulce sola, con un overol a rayas.', caption: 'Pequeña exploradora de grandes misterios.' },
-    { src: 'images/gallery/02-diogo.jpg', alt: 'Diogo solo, sonriendo y juntando las manos.', caption: 'Un pequeño mundo de ocurrencias.' },
-    { src: 'images/gallery/03-dulce-diogo-pintando.jpg', alt: 'Dulce y Diogo pintando juntos en una mesa con crayones.', caption: 'Manitos ocupadas, imaginación desatada.' },
-    { src: 'images/gallery/04-dulce-diogo-sofa.jpg', alt: 'Dulce y Diogo sentados juntos en el sofá, sonriendo.', caption: 'Compañeros de juegos y travesuras.' },
+    { src: 'images/gallery/01-diogo.jpg', alt: 'Diogo de bebé.', caption: 'Un pequeño mundo de ocurrencias.' },
+    { src: 'images/gallery/02-dulce.jpg', alt: 'Dulce sonriendo.', caption: 'Pequeña exploradora de grandes misterios.' },
+    { src: 'images/gallery/03-dulce-diogo-zoo.jpg', alt: 'Dulce y Diogo juntos en el zoológico.', caption: 'Compañeros de juegos y travesuras.' },
+    { src: 'images/gallery/04-dulce-diogo-cake-smash.jpg', alt: 'Dulce y Diogo en su sesión Cake Smash.', caption: 'Nuestros primeros recuerdos de aventura.' },
   ],
   galleryPreview: { enabled: true, slots: 4 }, // Reservas ilustradas cuando aún no hay fotos.
   text: {

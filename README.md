@@ -48,7 +48,7 @@ Google Maps abre una URL válida en otra pestaña. La confirmación abre `wa.me`
 
 - Hero: `images/illustrations/hero-dulce.webp` y `hero-diogo.webp`.
 - Presentaciones: `images/illustrations/dulce-aventurera.webp` y `diogo-aventurero.webp`.
-- Galería: `images/gallery/01-dulce.jpg`, `02-diogo.jpg`, `03-dulce-diogo-pintando.jpg` y `04-dulce-diogo-sofa.jpg`.
+- Galería: `images/gallery/01-diogo.jpg`, `02-dulce.jpg`, `03-dulce-diogo-zoo.jpg` y `04-dulce-diogo-cake-smash.jpg`.
 - Vista previa social: `images/social.jpg`, de 1200 × 630.
 
 Las cuatro fotos son cuadradas y conservan sus encuadres. Sus pies definitivos están en `gallery[].caption`; un pie vacío no genera texto ni espacio adicional. La ampliación usa un diálogo nativo, cierra con Escape y devuelve el foco a la foto.
